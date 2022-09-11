@@ -4,7 +4,8 @@ let mistakes;
 let hits;
 let source;
 let wonSound = new Audio('./sounds/winsound.mp3');
-let loseSound = new Audio('./sounds/losesound.mp3')
+let loseSound = new Audio('./sounds/losesound.mp3');
+
 
 const playGame = ()=>{
     resetsValue();
@@ -72,7 +73,6 @@ const letterEvent = event =>{
 }
 
 
-
 const elementsSpans = () =>{
     for(let i = 0; i < wordSelect.length;i++){
         let span = document.createElement('span');
@@ -85,6 +85,13 @@ const elementsSpans = () =>{
 
 
 
+
+
+
+
+
+
+    
 
 
 

@@ -110,7 +110,7 @@ body{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) ;
     outline: 1px;
     border-radius: 35px;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -177,6 +177,10 @@ textarea::-webkit-input-placeholder {
     transform: translateY(-3px);
     background-color: #fff;
     color: #0A3871;
+  }
+
+  .btn-save:active{
+    background: rgba(255, 255, 255, 0.2);
   }
 
 .btn-cancel:hover{

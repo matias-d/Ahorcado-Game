@@ -25,16 +25,19 @@ body{
 
 .conteiner-g{
     display: grid;
-    gap: 15px;
+    gap: 12px;
+    min-height: 100vh;
     grid-template:
     "header-g" 50px 
     "stick" 300px
     "letras" 50px
     "letrasX" 10px
+    "inputMobil" 50px
     "boton1" 100px
     "boton2" 100px
     "footer" 70px;
 }
+
 
 .header-g{  
     display: flex;
@@ -69,6 +72,15 @@ body{
     justify-content: center;
     align-items: flex-start;
     grid-area: letrasX ;
+}
+
+.inputM{
+    grid-area: inputMobil;
+    display: flex;
+    margin-top: 8%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .btn1-g{
@@ -184,6 +196,20 @@ body{
     width: 30px;    
 }
 
+.inputM #text-i{
+    color: #fff;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-top:  1px solid transparent;
+    border-left:  1px solid transparent;
+    border-radius: 15px;
+    padding: 10px;
+    outline: none;
+    width: 28%;
+}
+
+
+
 
 /*PSEUDO ELEMNTOS
 ====================================*/
@@ -202,6 +228,15 @@ body{
     transform: translateY(-1px);
   }
 
+  #button-i:active{
+    transform: translateY(-2px);
+    color: #0A3871;
+    background: #fff;
+  }
+
+  input::-webkit-input-placeholder {
+    color: #fff;
+  }
 
 /*          MEDIA QUERY
 =============================================*/
@@ -213,6 +248,7 @@ body{
         "stick stick" 300px
         "letras letras" 50px
         "letrasX letrasX" 30px
+        "inputMobil inputMobil" 30px
         "boton1 boton2" 100px
         "footer footer" 60px /
         auto auto;
@@ -233,6 +269,9 @@ body{
         width: 98.2%;
     }
 
+    .inputM{
+        margin-top: 0rem;
+    }
 }
 
 @media (min-width: 900px){
@@ -245,6 +284,7 @@ body{
         "stick stick stick" 300px
         "letras letras letras" 50px
         "letrasX letrasX letrasX" 50px
+        "inputMobil inputMobil inputMobil" 10px
         "boton1 boton2" 100px
         "footer footer footer" 60px /
         auto auto;
@@ -253,6 +293,10 @@ body{
     .header-g{
         top: 10px;
         left: 150px;
+    }
+
+    .inputM{
+        display: none;
     }
 
 }
