@@ -46,7 +46,7 @@ const incorrectLetter = letter =>{
 
 const missLetter = letter =>{
     mistakes++;
-    source = `./img/img${mistakes}.png`;
+    source = './img/img' + mistakes + '.png'
     img.src = source;
     
     endGame();
