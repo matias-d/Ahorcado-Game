@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    height: 100vh;
+}
+
+body{
+    font-size: 1.2rem;
+    background-color: #F3F5FC;
+}
+
+/*CSS GRID CONFIG
+====================================*/
+
+.newWord{
+   display: none;
+}
+
+.conteiner-w{
+    display: grid;
+    gap: 10px;
+    min-height: 100vh;
+    grid-template: 
+    "header-w" auto
+    "newWord" 250px
+    "advertencia" 50px
+    "boton1" 70px
+    "boton2" 70px
+    "footer" auto;
+}
+
+.header-w{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header-w;
+}
+
+.text-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: newWord;
+
+}
+
+.adv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: advertencia;
+}
+
+.btn1-w{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: boton1;
+}
+
+.btn2-w{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    grid-area: boton2;
+}
+
+.footer-w{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+}
+
+/*              CSS
+====================================*/
+
+.text-add{
+    color: #0A3871;
+    resize: none;
+    width: 90%;
+    height: 100%;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 35px;
+    background: rgba(255, 255, 255, 0.2);
+    border-top:  1px solid rgba(255, 255, 255, 0.5);
+    border-left:  1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) ;
+    outline: none;
+    letter-spacing: 1px;
+    backdrop-filter: blur(5px);
+}
+
+.adv{
+    background: rgba(255, 255, 255, 0.2);
+    border-top:  1px solid rgba(255, 255, 255, 0.5);
+    border-left:  1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) ;
+    outline: 1px;
+    border-radius: 35px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.adv img{
+    position: relative;
+    left: -5px;
+    vertical-align: top;
+}
+
+.adv p{
+    font-size: 14px;
+}
+
+.btn-save{
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 25px;
+    border-radius: 35px;
+    width: 90%;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border-top:  1px solid rgba(255, 255, 255, 0.5);
+    border-left:  1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) ;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-cancel{
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 25px;
+    border-radius: 35px;
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border-top:  1px solid rgba(255, 255, 255, 0.5);
+    border-left:  1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) ;
+}
+
+.developed{
+    font-size: 12px;
+}
+
+.footer-w img{
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+/*      PSEUDO-ELEMENTOS
+=====================================*/
+
+textarea::-webkit-input-placeholder {
+    color: #092f5e;
+  }
+
+  .btn-save:hover{
+    transform: translateY(-3px);
+    background-color: #fff;
+    color: #0A3871;
+  }
+
+.btn-cancel:hover{
+    transform: translateY(-3px);
+    background-color: #fff;
+    color: #0A3871;
+  }  
+
+.footer-w img:hover{
+    transform: translateY(-1px);
+  }
+
+/*MEDIA QUERY
+==================================*/
+
+@media (min-width: 600px){
+    .conteiner-w{
+        grid-template: 
+        "header-w header-w" 100px
+        "newWord newWord" 300px
+        "advertencia advertencia" 40px
+        "boton1 boton2" 70px
+        "footer footer" auto /
+        auto auto;
+    }
+
+    .btn1-w{
+        align-items: flex-start;
+    }
+
+    .adv{
+        width: 40%;
+        justify-content: center;
+        margin-left: 5%;
+    }
+
+    .btn-save{
+        width: 96.5%;
+    }
+
+}
+
+@media (min-width: 900px){
+    .conteiner-w{
+        width: 980px;
+        margin: 0 auto;
+        grid-template: 
+        "header-w header-w header-w" 100px
+        "newWord newWord newWord" 300px
+        "advertencia advertencia advertencia" 40px
+        "boton1   boton2 " 70px
+        "footer footer footer" auto /
+        auto auto;
+    }
+
+    .header-w{
+        justify-content: flex-start;
+    }
+
+    .adv{
+        width: 30%;
+    }
+
+}
+
+
+
+
