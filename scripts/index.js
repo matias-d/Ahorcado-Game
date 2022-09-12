@@ -46,7 +46,7 @@ const incorrectLetter = letter =>{
 
 const missLetter = letter =>{
     mistakes++;
-    source = './img/img' + mistakes + '.png'
+    source = `/img/imgs${mistakes}.png`
     img.src = source;
     
     endGame();
@@ -80,6 +80,8 @@ const elementsSpans = () =>{
         addLetters.appendChild(span);
     }
 }
+
+
 
 
 

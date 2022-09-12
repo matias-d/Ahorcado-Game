@@ -21,7 +21,7 @@ const resetsValue = ()=>{ //Resetea los valores para un neuvo juego;
     hits = 0;
     addLetters.innerHTML = '';
     incorrectLetters.innerHTML = '';
-    img.src = `/img/img0.png`;
+    img.src = `/img/imgs0.png`;
     inputT.value = ''
 }
 
