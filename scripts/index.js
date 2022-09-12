@@ -2,7 +2,6 @@ let wordSelect;
 let lettersUsed;
 let mistakes;
 let hits;
-let source;
 let wonSound = new Audio('./sounds/winsound.mp3');
 let loseSound = new Audio('./sounds/losesound.mp3');
 
@@ -46,7 +45,7 @@ const incorrectLetter = letter =>{
 
 const missLetter = letter =>{
     mistakes++;
-    source = `/img/imgs${mistakes}.png`
+    let source = `./img/img${mistakes}.png`
     img.src = source;
     
     endGame();

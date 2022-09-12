@@ -21,7 +21,7 @@ const resetsValue = ()=>{ //Resetea los valores para un neuvo juego;
     hits = 0;
     addLetters.innerHTML = '';
     incorrectLetters.innerHTML = '';
-    img.src = `/img/imgs0.png`;
+    img.src = `./img/img0.png`;
     inputT.value = ''
 }
 
@@ -99,7 +99,7 @@ const home = document.querySelector('.home')
 const game = document.querySelector('.game')
 const addLetters = document.querySelector('.addLetters')
 const incorrectLetters = document.querySelector('.incorrectLetters')
-const img = document.querySelector('#img');
+const img = document.querySelector('#imgS');
 const addWordes = document.querySelector('.text-area');
 const inputT = document.querySelector('#text-i')
 
