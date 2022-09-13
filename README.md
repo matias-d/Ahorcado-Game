@@ -29,5 +29,6 @@ ________________________________________________________________________________
     
 ------
 
+- ### [ Preview Pagina Web](https://matiasc33.github.io/Ahorcado-Game/) :page_facing_up:
+  [![Medium-Screen-1360x768.png](https://i.postimg.cc/FKqgkX64/Medium-Screen-1360x768.png)](https://postimg.cc/SX6zH3qT)
 
-#### :page_facing_up: [ Preview Pagina Web](https://matiasc33.github.io/Ahorcado-Game/) 
