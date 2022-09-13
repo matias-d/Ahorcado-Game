@@ -32,10 +32,9 @@ body{
     "stick" 300px
     "letras" 50px
     "letrasX" 10px
-    "inputMobil" 50px
+    "buttons" 180px
     "boton1" 100px
     "boton2" 100px
-    "footer" 70px;
 }
 
 
@@ -53,7 +52,7 @@ body{
     grid-area: stick;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 35px;
-    box-shadow: 0 25px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 4px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.2) ;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2) ;
@@ -74,13 +73,16 @@ body{
     grid-area: letrasX ;
 }
 
-.inputM{
-    grid-area: inputMobil;
+.buttons{
+    grid-area: buttons;
     display: flex;
-    margin-top: 8%;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10%;
 }
 
 .btn1-g{
@@ -97,14 +99,6 @@ body{
     grid-area: boton2;
 }
 
-.footer-g{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    grid-area: footer;
-}
 
 /*              CSS
 ========================================*/
@@ -146,24 +140,18 @@ body{
 .addLetters span{
     position: relative;
     vertical-align: bottom;
-    color: #0e3d77;
+    color: #fff;
     font-size: 1.5em;
     border-bottom: 3px solid #0a3264;
     width: 40px;
     text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) ;
+    border-radius: 25px;
     margin-right: 6px;
     display: inline-block;
 }
 
-.developed{
-    font-size: 12px;
-}
-
-.footer-g img{
-    transition: transform 0.3s ease-in-out;
-    background-color: #fff;
-    border-radius: 30px;
-}
 
 .stick img{
     width: 220px;
@@ -196,7 +184,7 @@ body{
     width: 30px;    
 }
 
-.inputM #text-i{
+.buttons button{
     color: #fff;
     border: none;
     background: rgba(255, 255, 255, 0.2);
@@ -205,7 +193,32 @@ body{
     border-radius: 15px;
     padding: 10px;
     outline: none;
-    width: 30%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.buttons .btnUsed{
+    color: red;
+    border: none;
+    background: rgba(253, 5, 5, 0.2);
+    border-top:  1px solid transparent;
+    border-left:  1px solid transparent;
+    border-radius: 15px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.buttons .btnUsedHit{
+    color: #21fc5b;
+    border: none;
+    background: rgba(5, 253, 38, 0.2);
+    border-top:  1px solid transparent;
+    border-left:  1px solid transparent;
+    border-radius: 15px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
 }
 
 
@@ -224,19 +237,12 @@ body{
     background-color: #fff;
   }  
 
-.footer-g img:hover{
-    transform: translateY(-1px);
-  }
-
-  #button-i:active{
+.buttons button:hover{
     transform: translateY(-2px);
-    color: #0A3871;
-    background: #fff;
   }
 
-  input::-webkit-input-placeholder {
-    color: #fff;
-  }
+
+  
 
 /*          MEDIA QUERY
 =============================================*/
@@ -245,12 +251,11 @@ body{
     .conteiner-g{
         grid-template: 
         "header-g header-g" 50px
-        "stick stick" 300px
+        "stick stick" 295px
         "letras letras" 50px
         "letrasX letrasX" 30px
-        "inputMobil inputMobil" 30px
-        "boton1 boton2" 100px
-        "footer footer" 60px /
+        "buttons buttons" 170px
+        "boton1 boton2" 100px /
         auto auto;
     }
 
@@ -269,9 +274,15 @@ body{
         width: 98.2%;
     }
 
-    .inputM{
-        margin-top: 0rem;
+    .buttons{
+        width: 70%;
+        margin: 0 auto;
     }
+
+    .buttons button{
+        font-size: 1.1rem;
+    }
+
 }
 
 @media (min-width: 900px){
@@ -281,12 +292,11 @@ body{
         margin: 0 auto;
         grid-template:
         "header-g header-g header-g" 50px
-        "stick stick stick" 300px
+        "stick stick stick" 240px
         "letras letras letras" 50px
         "letrasX letrasX letrasX" 50px
-        "inputMobil inputMobil inputMobil" 10px
-        "boton1 boton2" 100px
-        "footer footer footer" 60px /
+        "buttons buttons buttons" 150px
+        "boton1 boton2" 100px /
         auto auto;
     }
 
@@ -295,10 +305,23 @@ body{
         left: 150px;
     }
 
-    .inputM{
-        display: none;
+    .buttons{
+        width: 50%;
+        margin: 0 auto;
     }
 
+    .buttons button{
+        padding: 13px;
+        font-size: 1.1rem;
+    }
+
+    .buttons .btnUsed{
+        padding: 13px;
+    }
+
+    .buttons .btnUsedHit{
+        padding: 13px;
+    }
 }
 
 

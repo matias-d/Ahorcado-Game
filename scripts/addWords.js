@@ -6,7 +6,7 @@ let valueText;
 
 const addWord = ()=>{
     valueText = textArea.value.toUpperCase();
-    if(valueText.length >=3 && valueText.length <=8){
+    if(valueText.length >=3 && valueText.length <=8 && valueText.match(/[a-zñ]$/i)){
         verifyWords(valueText);
         textArea.style.border = 'none';
         pAdv.style.color = '#495057';   

@@ -22,7 +22,6 @@ const resetsValue = ()=>{ //Resetea los valores para un neuvo juego;
     addLetters.innerHTML = '';
     incorrectLetters.innerHTML = '';
     img.src = `./img/img0.png`;
-    inputT.value = ''
 }
 
 
@@ -74,7 +73,7 @@ function aError(palabra){ //Alarma por si no se adivina la palabra
     Swal.fire({
       position: 'center',
       icon: 'success',
-      title: 'Su palabra a sido añadida',
+      title: 'Su palabra a sido añadida!',
       showConfirmButton: false,
       timer: 1500
     })
@@ -83,7 +82,7 @@ function aError(palabra){ //Alarma por si no se adivina la palabra
   function repeatWord(palabra){
     Swal.fire({
       position: 'center',
-      icon: 'error',
+      icon: 'warning',
       title: 'Su palabra ' + palabra + " ya se agrego!",
       showConfirmButton: false,
       timer: 1500
@@ -101,7 +100,6 @@ const addLetters = document.querySelector('.addLetters')
 const incorrectLetters = document.querySelector('.incorrectLetters')
 const img = document.querySelector('#imgS');
 const addWordes = document.querySelector('.text-area');
-const inputT = document.querySelector('#text-i')
 
 const btnI = document.querySelector('#btn-i'), //Botones a usar
       btnA = document.querySelector('#btn-a'),
