@@ -29,6 +29,6 @@ ________________________________________________________________________________
     
 ------
 
-- ### [ Prueba el Juego](https://matiasc33.github.io/Ahorcado-Game/) :video_game:
+- ### [ Prueba el Juego](https://matias-d.github.io/Ahorcado-Game/) :video_game:
   <img  src="https://i.postimg.cc/FKqgkX64/Medium-Screen-1360x768.png" width = 620 heigth = 300>
   <img  src="https://i.postimg.cc/FKMBZDRY/i-Phone-XR-XS-Max-414x896.png" width = 170 height = 350>
